@@ -1,1 +1,0 @@
-export { RedirectMedications } from './RedirectMedications';

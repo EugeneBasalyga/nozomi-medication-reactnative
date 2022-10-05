@@ -1,10 +1,10 @@
-import { NativeRouter } from 'react-router-native';
+import { NavigationContainer } from '@react-navigation/native';
 import {
   useFonts, Nunito_300Light_Italic, Nunito_400Regular, Nunito_700Bold,
 } from '@expo-google-fonts/nunito';
 
 import { AuthProvider } from './src/contexts/auth';
-import AppRouter from './src/router/AppRouter';
+import RootNavigator from './src/navigation/RootNavigator';
 
 const App = () => {
   const [fontsLoaded] = useFonts({
@@ -18,11 +18,11 @@ const App = () => {
   }
 
   return (
-    <AuthProvider>
-      <NativeRouter>
-        <AppRouter />
-      </NativeRouter>
-    </AuthProvider>
+    <NavigationContainer>
+      <AuthProvider>
+        <RootNavigator />
+      </AuthProvider>
+    </NavigationContainer>
   );
 };
 
