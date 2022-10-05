@@ -29,7 +29,12 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "sdkVersion": "46.0.0"
+    "sdkVersion": "46.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "5ea811d6-fc9f-479a-aca0-b76c5f6841e1"
+      }
+    }
   },
   "name": "nozomi-medication-reactnative"
 }

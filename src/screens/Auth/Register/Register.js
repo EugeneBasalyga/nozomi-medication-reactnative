@@ -114,17 +114,16 @@ const Register = () => {
 const styles = StyleSheet.create({
   layoutContainer: {
     flex: 1,
+    backgroundColor: '#f9f9ff',
   },
   logoContainer: {
     flex: 2,
-    backgroundColor: '#f9f9ff',
     alignItems: 'center',
     justifyContent: 'center',
   },
   authContainer: {
     flex: 5,
     fontFamily: 'Nunito_400Regular',
-    backgroundColor: '#f9f9ff',
     justifyContent: 'flex-start',
     flexDirection: 'column',
   },

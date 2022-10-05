@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { useAuth } from '../contexts/auth';
-// import { Loading } from '@screens/Loading';
+import Loading from '../screens/Loading';
 
 import AuthNavigator from './AuthNavigator/AuthNavigator';
 import MedicationsNavigator from './MedicationsNavigator/MedicationsNavigator';
@@ -13,7 +13,7 @@ const RootNavigator = () => {
 
   const getRoute = () => {
     if (isLoading) {
-      // return { name: 'Loading', component: Loading };
+      return { name: 'Loading', component: Loading };
     }
 
     if (user) {
